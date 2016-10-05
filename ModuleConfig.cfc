@@ -2,13 +2,24 @@ component {
 
     function configure() {
         parseParentSettings();
+    }
 
+    function onLoad() {
         var helpers = controller.getSetting( "applicationHelper" );
         arrayAppend(
             helpers,
             "#moduleMapping#/helpers/SvgIconHelpers.cfm"
         );
         controller.setSetting( "applicationHelper", helpers );
+    }
+
+    function onUnload() {
+        controller.setSetting(
+            "applicationHelper",
+            arrayFilter( controller.getSetting( "applicationHelper" ), function( helper ) {
+                return helper != "#moduleMapping#/helpers/SvgIconHelpers.cfm"; 
+            } )
+        );
     }
 
     private void function parseParentSettings() {
