@@ -1,0 +1,37 @@
+{
+    "name":"cbsvg",
+    "version":"1.0.0",
+    "author":"Eric Peterson",
+    "location":"elpete/cbsvg#v1.0.0",
+    "homepage":"https://github.com/elpete/cbsvg",
+    "documentation":"",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/elpete/cbsvg"
+    },
+    "bugs":"https://github.com/elpete/cbsvg/issues",
+    "slug":"cbsvg",
+    "shortDescription":"",
+    "type":"modules",
+    "keywords":[
+        "svg",
+        "icons",
+        "coldbox"
+    ],
+    "private":false,
+    "license":[
+        {
+            "type":"MIT",
+            "URL":"https://raw.githubusercontent.com/elpete/cbsvg/master/LICENSE"
+        }
+    ],
+    "scripts":{
+        "postVersion":"package set location='elpete/cbsvg#v`package version`'",
+        "postPublish":"!git push && !git push --tags"
+    },
+    "ignore":[
+        "**/.*",
+        "test",
+        "tests"
+    ]
+}
