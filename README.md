@@ -121,3 +121,7 @@ cbsvg = {
     iconPath = "/resources/assets/svg/icons"
 };
 ```
+
+## Credits
+
+This package was adapted for CFML from [Adam Wathan's](https://adamwathan.me/) [blade-svg](https://github.com/adamwathan/blade-svg) package for Laravel.
