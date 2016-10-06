@@ -4,20 +4,6 @@
 
 `box install cbsvg`
 
-If using a spritesheet, include it in the `<body>` tag in your layout using the `svgSpritesheet()` helper function.
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-    <head><!-- ... --></head>
-    <body>
-        <!-- ... -->
-
-        #svgSpritesheet()#
-    </body>
-</html>
-```
-
 ## Basic Usage
 
 ### Icon
