@@ -18,10 +18,4 @@
             .getIcon( argumentCollection = arguments );
     }
 
-    public string function svgSpritesheet() {
-        return application.wirebox
-            .getInstance( "IconFactory@cbsvg" )
-            .getSpritesheet();
-    }
-
 </cfscript>

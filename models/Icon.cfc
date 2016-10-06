@@ -1,9 +1,12 @@
 component accessors="true" {
 
+    property name="config" inject="coldbox:setting:cbsvg";
+
     property name="iconName";
     property name="attributes";
     property name="renderMode";
     property name="factory";
+
 
     public string function render() {
         if ( getRenderMode() == "inline" ) {
@@ -22,7 +25,7 @@ component accessors="true" {
     }
 
     private string function renderFromSprite() {
-        return '<svg #renderAttributes()#><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="###getFactory().getSpriteId( getIconName() )#"></use></svg>';   
+        return '<svg #renderAttributes()#><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#config.spritesheetPath####getFactory().getSpriteId( getIconName() )#"></use></svg>';
     }
 
     private string function renderAttributes() {

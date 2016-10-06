@@ -34,10 +34,6 @@ component {
         return icon;
     }
 
-    public string function getSpritesheet() {
-        return '<div style="display: none;">#fileRead( config.spritesheetPath )#</div>';
-    }
-
     private string function getRenderMode() {
         return config.inline ? "inline" : "sprite";
     }

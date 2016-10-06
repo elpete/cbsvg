@@ -32,7 +32,7 @@ component {
             inline = false,
             class = "icon",
             spritePrefix = "",
-            spritesheetPath = "/resources/assets/svg/sprite.svg",
+            spritesheetPath = "/includes/svg/sprite.svg",
             iconPath = "/resources/assets/svg/icons"
         };
 
