@@ -1,5 +1,9 @@
 # cbsvg
 
+[![Build Status](https://travis-ci.org/elpete/cbsvg.svg?branch=master)](https://travis-ci.org/elpete/cbsvg)
+
+[![Build Status](https://travis-ci.org/elpete/cbsvg.svg?branch=development)](https://travis-ci.org/elpete/cbsvg)
+
 ## Installation
 
 `box install cbsvg`
