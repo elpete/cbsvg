@@ -1,8 +1,8 @@
 # cbsvg
 
-[![Build Status](https://travis-ci.org/elpete/cbsvg.svg?branch=master)](https://travis-ci.org/elpete/cbsvg)
-
-[![Build Status](https://travis-ci.org/elpete/cbsvg.svg?branch=development)](https://travis-ci.org/elpete/cbsvg)
+[![Master Branch Build Status](https://img.shields.io/travis/elpete/cbsvg/master.svg?label=master
+)](https://travis-ci.org/coldbox-elixir/core) [![Development Branch Build Status](https://img.shields.io/travis/elpete/cbsvg/development.svg?label=development
+)](https://travis-ci.org/coldbox-elixir/core)
 
 ## Installation
 
