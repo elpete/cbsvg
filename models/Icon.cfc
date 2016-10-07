@@ -1,7 +1,5 @@
 component accessors="true" {
 
-    property name="config" inject="coldbox:setting:cbsvg";
-
     property name="iconName";
     property name="attributes";
     property name="renderMode";
@@ -16,6 +14,18 @@ component accessors="true" {
         return renderFromSprite();
     }
 
+    public Icon function inline() {
+        variables.renderMode = "inline";
+
+        return this;
+    }
+
+    public Icon function sprite() {
+        variables.renderMode = "sprite";
+
+        return this;
+    }
+
     private string function renderInline() {
         return replace(
             getFactory().getSvg( getIconName() ),
@@ -25,7 +35,7 @@ component accessors="true" {
     }
 
     private string function renderFromSprite() {
-        return '<svg #renderAttributes()#><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#config.spritesheetPath####getFactory().getSpriteId( getIconName() )#"></use></svg>';
+        return '<svg #renderAttributes()#><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#getFactory().getSpritesheetPath()####getFactory().getSpriteId( getIconName() )#"></use></svg>';
     }
 
     private string function renderAttributes() {
@@ -34,10 +44,10 @@ component accessors="true" {
         for( var key in attrs ) {
             var value = attrs[ key ];
             if ( value == "" ) {
-                var attr = key;
+                var attr = camelToDash( key );
             }
             else {
-                var attr = '#key#="#value#"';
+                var attr = '#camelToDash( key )#="#value#"';
             }
             arrayAppend( formattedAttrs, attr );
         }
@@ -57,6 +67,15 @@ component accessors="true" {
             return addAttribute( missingMethodName, "" );
         }
         return addAttribute( missingMethodName, missingMethodArguments[1] );
+    }
+
+    /**
+     * Converts a camelCased string into dash-case
+     */
+    private string function camelToDash( required string str ) {
+        return trim(
+            lcase( reReplace( arguments.str, "([A-Z])([a-z])", "-\1\2", "ALL" ) )
+        );
     }
 
 }

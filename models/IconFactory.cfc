@@ -7,7 +7,7 @@ component {
 
     public string function getSvg( required string iconName ) {
         if ( ! structKeyExists( variables.svgCache, iconName ) ) {
-            var icon = fileRead( "#config.iconPath#/#iconName#.svg" );
+            var icon = fileRead( expandPath( "#config.iconPath#/#iconName#.svg" ) );
             variables.svgCache[ iconName ] = icon;
         }
 
@@ -18,6 +18,10 @@ component {
         return "#config.spritePrefix##iconName#";
     }
 
+    public string function getSpritesheetPath() {
+        return config.spritesheetPath;
+    }
+
     public Icon function getIcon(
         required string iconName,
         string class = "",
@@ -25,6 +29,7 @@ component {
     ) {
         var attrs = { "class" = buildClass( class ) };
         structAppend( attrs, attributes, true );
+
 
         var icon = wirebox.getInstance( "Icon@cbsvg" );
         icon.setIconName( iconName );

@@ -64,12 +64,12 @@ Call `render()` to get the svg string back.
 
 ```html
 <a href="/profile">
-	#svgIcon( "user" ).alt( "user profile icon" ).render()# Profile
+	#svgIcon( "user" ).alt( "user profile icon" ).dataFoo( "bar" ).dataBaz().render()# Profile
 </a>
 
 <!-- Renders -->
 <a href="/profile">
-	<svg class="icon" alt="user-profile-icon">
+	<svg class="icon" alt="user-profile-icon" data-foo="bar" data-baz>
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use>
     </svg>
     Profile
