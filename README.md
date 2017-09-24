@@ -1,4 +1,5 @@
 # cbsvg
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 [![Master Branch Build Status](https://img.shields.io/travis/elpete/cbsvg/master.svg?label=master
 )](https://travis-ci.org/coldbox-elixir/core) [![Development Branch Build Status](https://img.shields.io/travis/elpete/cbsvg/development.svg?label=development
@@ -115,3 +116,14 @@ cbsvg = {
 ## Credits
 
 This package was adapted for CFML from [Adam Wathan's](https://adamwathan.me/) [blade-svg](https://github.com/adamwathan/blade-svg) package for Laravel.
+
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+| [<img src="https://avatars1.githubusercontent.com/u/2583646?v=4" width="100px;"/><br /><sub>Eric Peterson</sub>](https://github.com/elpete)<br />[💻](https://github.com/elpete/cbsvg/commits?author=elpete "Code") [📖](https://github.com/elpete/cbsvg/commits?author=elpete "Documentation") |
+| :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
