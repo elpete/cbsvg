@@ -6,10 +6,6 @@
 )](https://travis-ci.org/coldbox-elixir/core) [![Development Branch Build Status](https://img.shields.io/travis/elpete/cbsvg/development.svg?label=development
 )](https://travis-ci.org/coldbox-elixir/core)
 
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/TQMfPZtDP7SHs7UgJVGg61uH/elpete/cbsvg'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/TQMfPZtDP7SHs7UgJVGg61uH/elpete/cbsvg.svg' />
-</a>
-
 ## Installation
 
 `box install cbsvg`
